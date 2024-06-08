@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://GalburMihail.github.io/Peintre-et-decoration",
+  "homepage": "https://GalburMihail.github.io/Peintreetdecoration",
   "private": true,
   "dependencies": {
     "@coreui/coreui": "^5.0.2",
