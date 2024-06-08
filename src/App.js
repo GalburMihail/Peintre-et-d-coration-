@@ -69,7 +69,6 @@ const services = [
 const exteriorCleaningServices = [
   "Nettoyage de façades",
   "Nettoyage de toitures",
-  "Nettoyage de terrasses",
   "Nettoyage de murs extérieurs",
   "extration de mousse",
   "Et autres....."
