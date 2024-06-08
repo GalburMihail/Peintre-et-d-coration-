@@ -176,7 +176,7 @@ function App() {
       <section className='app-ecran-1 carousel-container'>
         <CCarousel>
           <CCarouselItem className="app-ecran-1-item">
-            <CImage className="app-ecran-1-image" src={`${process.env.PUBLIC_URL}/asset/peintre-caroussel.png`} alt="First slide"/>
+            <CImage className="app-ecran-1-image" src={`${process.env.PUBLIC_URL}/asset/peintre-caroussel.png`} alt="peintre professionel"/>
             <CCarouselCaption className="custom-caption">
               <div className="caption-container">
                 <div className="satisfaction-label">100% de satisfaction client</div>
@@ -186,7 +186,7 @@ function App() {
             </CCarouselCaption>
           </CCarouselItem>
           <CCarouselItem className="app-ecran-1-item">
-            <CImage className="app-ecran-1-image" src={`${process.env.PUBLIC_URL}/asset/Entretien-dune-toiture.jpg`} alt="Second slide"/>
+            <CImage className="app-ecran-1-image" src={`${process.env.PUBLIC_URL}/asset/Entretien-dune-toiture.jpg`} alt="nettoyage toiture"/>
             <CCarouselCaption className="custom-caption">
               <div className="caption-container">
                 <div className="satisfaction-label">100% de satisfaction client</div>
@@ -258,13 +258,13 @@ function App() {
             <Col md={6}>
               <BootstrapCarousel controls={true} indicators={false} interval={5000}>
                 <BootstrapCarousel.Item>
-                  <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/asset/peinture-1.jpg`} alt="First slide" />
+                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/peinture-1.jpg`} alt="peintre" />
                 </BootstrapCarousel.Item>
                 <BootstrapCarousel.Item>
-                  <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/asset/peinture-2.jpg`} alt="Second slide" />
+                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/peinture-2.jpg`} alt="decoration" />
                 </BootstrapCarousel.Item>
                 <BootstrapCarousel.Item>
-                  <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/asset/peinture-3.jpg`} alt="Third slide" />
+                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/peinture-3.jpg`} alt="peintre" />
                 </BootstrapCarousel.Item>
               </BootstrapCarousel>
             </Col>
@@ -295,13 +295,13 @@ function App() {
             <Col md={6}>
               <BootstrapCarousel controls={true} indicators={false} interval={5000}>
                 <BootstrapCarousel.Item>
-                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/image-1-to.jpg`} alt="First slide" />
+                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/image-1-to.jpg`} alt="toiture" />
                 </BootstrapCarousel.Item>
                 <BootstrapCarousel.Item>
-                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/toiture-1.png`} alt="Second slide" />
+                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/toiture-1.png`} alt="toiture" />
                 </BootstrapCarousel.Item>
                 <BootstrapCarousel.Item>
-                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/toiture-2.png`} alt="Third slide" />
+                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/toiture-2.png`} alt="toiture" />
                 </BootstrapCarousel.Item>
               </BootstrapCarousel>
             </Col>
