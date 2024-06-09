@@ -5,7 +5,7 @@
 
 .App-header {
   background-color: #000000;
-  min-height: 16vh;
+  min-height: 18vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,13 +17,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 70%;
+  width: 60%;
   padding: 0 20px;
 }
 
 .app-header-image {
   width: 16vw;
-  height: auto;
+  height: 16vh;
   max-height: 15vh;
   margin: 0;
 }
@@ -44,14 +44,15 @@
 
 .app-header-title {
   margin: 0;
-  font-size: 1rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
+  padding: 2%;
 }
 
 .app-header-phone {
   color: #ff4d14;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   display: block;
@@ -117,15 +118,15 @@
 }
 
 .app-ecran-1-title{
-font-size: 50px;
+font-size: 3.5rem;
 }
 
 .app-ecran-1-subtitle{
-font-size: 20px;
+font-size: 2rem;
 }
 
-.carousel-container {
-  max-width: 1200px;
+.carousel-container { 
+  width: 100% ;
   margin: auto;
 }
 
@@ -187,7 +188,7 @@ font-size: 20px;
 
 .app-ecran-2-header{
   display: flex;
-  width: 40%;
+  width: 50%;
   margin-bottom: 2%;
 }
 
@@ -262,7 +263,7 @@ font-size: 20px;
 }
 
 .app-ecran-3-title {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -272,7 +273,7 @@ font-size: 20px;
 }
 
 .app-ecran-3-element {
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: #fffefd;
   text-decoration: none;
   font-weight: bold;
@@ -417,7 +418,7 @@ text-align: left;
 }
 
 .app-ecran-5-title {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0;
 }
 
