@@ -173,7 +173,7 @@ function App() {
       </header>
 
       <section className='app-ecran-1 carousel-container'>
-        <CCarousel>
+        <CCarousel interval={8000}>
           <CCarouselItem className="app-ecran-1-item">
             <CImage className="app-ecran-1-image" src={`${process.env.PUBLIC_URL}/asset/peintre-caroussel.png`} alt="peintre professionel"/>
             <CCarouselCaption className="custom-caption">

@@ -117,16 +117,8 @@
   overflow: hidden;
 }
 
-.app-ecran-1-title{
-font-size: 3.5rem;
-}
-
-.app-ecran-1-subtitle{
-font-size: 2rem;
-}
-
-.carousel-container { 
-  width: 100% ;
+.carousel-container {
+  width: 100%;
   margin: auto;
 }
 
@@ -147,18 +139,26 @@ font-size: 2rem;
 .satisfaction-label {
   background-color: #ff4d14;
   color: white;
-  padding: 5px 10px;  
-  border-radius: 50px;  
+  padding: 5px 10px;
+  border-radius: 50px;
   display: inline-block;
   margin-bottom: 10px;
-  font-size: 16px;  
+  font-size: 16px;
   text-align: center;
   font-family: Arial, sans-serif;
 }
 
+.app-ecran-1-title {
+  font-size: 2.5rem;
+}
+
+.app-ecran-1-subtitle {
+  font-size: 1.5rem;
+}
+
 .app-ecran-1-image {
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   object-fit: cover;
   filter: brightness(50%); /* Applique un filtre de luminosité */
   transition: filter 0.3s ease-in-out;
@@ -179,49 +179,151 @@ font-size: 2rem;
   z-index: 1; /* Assurez-vous que le filtre est au-dessus de l'image */
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .custom-caption {
+    top: 35%;
+    left: 5%;
+  }
+
+  .caption-container {
+    max-width: 90%;
+  }
+
+  .app-ecran-1-title {
+    font-size: 2rem;
+  }
+
+  .app-ecran-1-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .satisfaction-label {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-caption {
+    top: 30%;
+    left: 5%;
+  }
+
+  .caption-container {
+    max-width: 100%;
+  }
+
+  .app-ecran-1-title {
+    font-size: 1.8rem;
+  }
+
+  .app-ecran-1-subtitle {
+    font-size: 1rem;
+  }
+
+  .satisfaction-label {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+
+  .app-ecran-1-image {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-caption {
+    top: 25%;
+    left: 5%;
+  }
+
+  .caption-container {
+    max-width: 100%;
+  }
+
+  .app-ecran-1-title {
+    font-size: 1.5rem;
+  }
+
+  .app-ecran-1-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .satisfaction-label {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+
+  .app-ecran-1-image {
+    height: 40vh;
+  }
+}
+
 
 /* partie des card*/
 
-.app-ecran-2{
-  margin: 5% 0%;
+.app-ecran-2 {
+  margin: 5% 0;
 }
 
-.app-ecran-2-header{
+.app-ecran-2-header {
   display: flex;
-  width: 50%;
+  width: 100%;
+  justify-content: center;
   margin-bottom: 2%;
 }
 
-.app-ecran-2-card{
-  height: 70vh;
-  max-height: 70vh;
-}
-
-.app-ecran-2 .app-ecran-2-title {
+.app-ecran-2-title {
   font-size: 2rem;
   font-weight: bold;
   color: #333;
+  text-align: center;
 }
 
-.app-ecran-2 .card {
-  height: 100%;
+.app-ecran-2-card {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.app-ecran-2 .card:hover {
+.app-ecran-2-card:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .app-ecran-2 .card img {
   height: 200px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
-/* partie intermedihaire */
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .app-ecran-2-title {
+    font-size: 1.5rem;
+  }
 
+  .app-ecran-2 .card {
+    margin-bottom: 20px;
+  }
+
+  .app-ecran-2 .card img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .app-ecran-2-title {
+    font-size: 1.2rem;
+  }
+
+  .app-ecran-2 .card img {
+    height: 120px;
+  }
+}
+
+
+/* partie intermedihaire */
 .app-ecran-3 {
   position: relative;
-  height: 15vh; /* Définir la hauteur à 15vh */
+  height: 20vh; /* Augmenter la hauteur pour plus de flexibilité */
   color: white;
   text-align: center;
   display: flex;
@@ -263,7 +365,7 @@ font-size: 2rem;
 }
 
 .app-ecran-3-title {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -273,16 +375,25 @@ font-size: 2rem;
 }
 
 .app-ecran-3-element {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #fffefd;
   text-decoration: none;
   font-weight: bold;
   background-color: #ff4d14;
   padding: 10px 20px;
   border-radius: 3%;
+  display: inline-block; /* Assurez-vous qu'il est inline-block pour les ajustements de largeur */
+  width: auto; /* Permet à l'élément de s'adapter au contenu */
+  white-space: nowrap; /* Empêche le texte de se déformer */
 }
 
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
+  .app-ecran-3 {
+    height: auto; /* Ajuster la hauteur automatiquement */
+    padding: 20px 0; /* Ajouter du padding pour plus d'espace */
+  }
+
   .app-ecran-3-container {
     width: 100%;
   }
@@ -307,6 +418,8 @@ font-size: 2rem;
   .app-ecran-3-element {
     font-size: 1.2rem;
     padding: 10px 20px;
+    width: 100%; /* Prend toute la largeur disponible sur les petits écrans */
+    text-align: center; /* Centre le texte */
   }
 }
 
@@ -322,8 +435,11 @@ font-size: 2rem;
   .app-ecran-3-element {
     font-size: 1rem;
     padding: 10px 15px;
+    width: 100%; /* Prend toute la largeur disponible sur les petits écrans */
+    text-align: center; /* Centre le texte */
   }
 }
+
 
 
 
@@ -392,7 +508,7 @@ text-align: left;
 
 .app-ecran-5 {
   position: relative;
-  height: 12vh; /* Définir la hauteur à 20vh */
+  height: 20vh; /* Augmenter la hauteur pour plus de flexibilité */
   color: white;
   text-align: center;
   display: flex;
@@ -420,32 +536,60 @@ text-align: left;
 .app-ecran-5-title {
   font-size: 3rem;
   margin: 0;
+  padding: 0 10px; /* Ajouter un peu de padding pour éviter le débordement */
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .app-ecran-5 {
+    height: 15vh; /* Ajuster la hauteur pour les écrans moyens */
+  }
+
+  .app-ecran-5-title {
+    font-size: 2rem; /* Réduire la taille de la police */
+  }
+}
+
+@media (max-width: 576px) {
+  .app-ecran-5 {
+    height: 12vh; /* Ajuster la hauteur pour les petits écrans */
+  }
+
+  .app-ecran-5-title {
+    font-size: 1.5rem; /* Réduire encore la taille de la police */
+  }
+
+  .app-ecran-5-container {
+    width: 80%; /* Augmenter la largeur du conteneur pour les petits écrans */
+  }
+}
+
 
 /* carrousel toitue */
 
 .app-ecran-6 {
   padding: 50px 0;
   background-color: #f9f9f9;
-  height: 70vh;
 }
 
 .app-ecran-6-image {
-  width:  39vw;
-  height: 60vh;
+  width: 100%;
+  height: auto;
 }
 
-.app-ecran-6 h2 {
-  font-size: 2.5rem;
+.app-ecran-6-title {
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
+  text-align: left;
 }
 
-.app-ecran-6 p {
-  font-size: 1.2rem;
+.app-ecran-6-text {
+  font-size: 1rem;
   line-height: 1.6;
   color: #555;
+  text-align: left;
 }
 
 .app-ecran-6 ul {
@@ -455,28 +599,52 @@ text-align: left;
 }
 
 .app-ecran-6 li {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 10px;
   color: #0c0f77;
   display: flex;
   align-items: center;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .app-ecran-6 li svg {
   margin-right: 10px;
   color: #0c0f77;
-  width: 3rem;
-  height: 4rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.app-ecran-6-title{
-  text-align: left;
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .app-ecran-6-title {
+    font-size: 1.5rem;
+  }
+
+  .app-ecran-6-text, .app-ecran-6 li {
+    font-size: 0.9rem;
+  }
+
+  .app-ecran-6 li svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
 }
 
-.app-ecran-6-text{
-  text-align: left;
+@media (max-width: 576px) {
+  .app-ecran-6-title {
+    font-size: 1.2rem;
+  }
+
+  .app-ecran-6-text, .app-ecran-6 li {
+    font-size: 0.8rem;
+  }
+
+  .app-ecran-6 li svg {
+    width: 1rem;
+    height: 1rem;
+  }
 }
+
 
 /*carrousel card */
 .app-ecran-7 {
