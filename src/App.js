@@ -81,7 +81,7 @@ const zones = [
   "Essonne (91)",
   "Hauts-de-Seine (92)",
   "Val-de-Marne (94)",
-  "antony(91160)"
+  "antony(92160)"
 ];
 
 const CustomLeftArrow = ({ onClick }) => (
