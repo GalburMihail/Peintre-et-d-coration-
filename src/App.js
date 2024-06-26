@@ -80,7 +80,8 @@ const zones = [
   "Yvelines (78)",
   "Essonne (91)",
   "Hauts-de-Seine (92)",
-  "Val-de-Marne (94)"
+  "Val-de-Marne (94)",
+  "antony(91160)"
 ];
 
 const CustomLeftArrow = ({ onClick }) => (
@@ -163,8 +164,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className='app-header-container'>
-          <img className='app-header-image' src={`${process.env.PUBLIC_URL}/asset/logo.png`} alt="Logo" />
-          <ul className='app-header-list'>
+        <img className='app-header-image' src={`${process.env.PUBLIC_URL}/asset/logo.png`} alt="Logo Galbur Mihail" />
+        <ul className='app-header-list'>
             <li className='app-header-item'>
                       <h2 className='app-header-title'><FaPhoneAlt />{" "}Appelez-nous pour un devis gratuit</h2></li>
             <li className='app-header-item'><a href="tel:0755911602" className='app-header-phone'>07 55 91 16 02</a></li>
@@ -175,8 +176,8 @@ function App() {
       <section className='app-ecran-1 carousel-container'>
         <CCarousel interval={8000}>
           <CCarouselItem className="app-ecran-1-item">
-            <CImage className="app-ecran-1-image" src={`${process.env.PUBLIC_URL}/asset/peintre-caroussel.png`} alt="peintre professionel"/>
-            <CCarouselCaption className="custom-caption">
+          <CImage className="app-ecran-1-image" src={`${process.env.PUBLIC_URL}/asset/peintre-caroussel.png`} alt="Peintre professionnel" />
+          <CCarouselCaption className="custom-caption">
               <div className="caption-container">
                 <div className="satisfaction-label">100% de satisfaction client</div>
                 <h5 className='app-ecran-1-subtitle'>Votre projet de Peinture sur mesure:</h5>
@@ -217,8 +218,8 @@ function App() {
             <Col>
               <Card>
                 <Card.Body>
-                  <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/asset/loger-Bleu_ycxrjejq.jpg`} />
-                  <Card.Title>Rénovation</Card.Title>
+                <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/asset/loger-Bleu_ycxrjejq.jpg`} alt="Service de rénovation" />
+                <Card.Title>Rénovation</Card.Title>
                   <Card.Text>
                     Donnez une nouvelle vie à votre propriété en optant pour notre service de peinture en rénovation, apportant fraîcheur et modernité à vos espaces intérieurs et extérieurs.
                   </Card.Text>
@@ -228,8 +229,8 @@ function App() {
             <Col>
               <Card>
                 <Card.Body>
-                  <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/asset/nettoyeur.jpg`} />
-                  <Card.Title>Néttoyage extérieur</Card.Title>
+                <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/asset/nettoyeur.jpg`} alt="Nettoyage extérieur professionnel" />
+                <Card.Title>Néttoyage extérieur</Card.Title>
                   <Card.Text>
                   Redonnez éclat et propreté à l'extérieur de votre maison grâce à notre service de nettoyage extérieur professionnel. Que ce soit pour le nettoyage de façades, de toitures, de terrasses, de murs extérieurs, de clôtures ou de piscines, notre équipe utilise des produits biologiques sans javel ni acide pour éliminer les mousses, les lichens et les champignons.
                   </Card.Text>
@@ -257,13 +258,13 @@ function App() {
             <Col md={6}>
               <BootstrapCarousel controls={true} indicators={false} interval={5000}>
                 <BootstrapCarousel.Item>
-                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/peinture-1.jpg`} alt="peintre" />
+                <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/peinture-1.jpg`} alt="Service de peinture" />
                 </BootstrapCarousel.Item>
                 <BootstrapCarousel.Item>
-                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/peinture-2.jpg`} alt="decoration" />
+                <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/peinture-2.jpg`} alt="Décoration intérieure" />
                 </BootstrapCarousel.Item>
                 <BootstrapCarousel.Item>
-                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/peinture-3.jpg`} alt="peintre" />
+                <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/peinture-3.jpg`} alt="Service de peinture" />
                 </BootstrapCarousel.Item>
               </BootstrapCarousel>
             </Col>
@@ -294,13 +295,13 @@ function App() {
             <Col md={6}>
               <BootstrapCarousel controls={true} indicators={false} interval={5000}>
                 <BootstrapCarousel.Item>
-                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/image-1-to.jpg`} alt="toiture" />
+                <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/image-1-to.jpg`} alt="Nettoyage de toiture" />
                 </BootstrapCarousel.Item>
                 <BootstrapCarousel.Item>
-                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/toiture-1.png`} alt="toiture" />
+                <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/toiture-1.png`} alt="Nettoyage de façade" />
                 </BootstrapCarousel.Item>
                 <BootstrapCarousel.Item>
-                  <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/toiture-2.png`} alt="toiture" />
+                <img className="app-ecran-6-image" src={`${process.env.PUBLIC_URL}/asset/toiture-2.png`} alt="Traitement anti-verdissures" />
                 </BootstrapCarousel.Item>
               </BootstrapCarousel>
             </Col>
